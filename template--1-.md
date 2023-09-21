@@ -17,7 +17,7 @@ the weather data frame from nycflights13.
 The format of this dataset is a dataframe of `358` rows and `15` columns
 representing hourly measurements and 15 variables. Some important
 variables are origin (meaning the weather station), year, month, day,
-hour, temp, and dewp.
+hour, temp, and humid (for humidity).
 
 ``` r
 mean_temp <- mean(early_january_weather[["temp"]])
@@ -32,6 +32,10 @@ ggplot(data = early_january_weather, aes(x = hour, y = temp, color = humid)) + g
 ```
 
 ![](template--1-_files/figure-gfm/yx_scatter-1.png)<!-- -->
+
+Humidity levels are positively associated with temperature (i.e., high
+humidity levels experience higher temperatures throughout the day).
+Average temperature is highest mid-day, between hours 10 and 15.
 
     ## Saving 7 x 5 in image
 
