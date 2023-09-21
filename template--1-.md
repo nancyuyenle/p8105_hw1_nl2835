@@ -1,19 +1,11 @@
-Simple document
+p8105_hw1_nl2835
 ================
+Nancy Le
+09-21-2023
 
 I’m an R Markdown document!
 
-# Section 1
-
-Here’s a **code chunk** that samples from a *normal distribution*:
-
 ``` r
-samp = rnorm(100)
-length(samp)
+library(moderndive)
+data("early_january_weather")
 ```
-
-    ## [1] 100
-
-# Section 2
-
-I can take the mean of the sample, too! The mean is -0.3335975.
