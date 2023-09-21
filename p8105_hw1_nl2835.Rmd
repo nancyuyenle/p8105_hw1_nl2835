@@ -47,7 +47,7 @@ library(tidyverse)
 ```{r}
 set.seed(1234)
 
-hw_df = #create example data frame
+hw_df = #create data frame
   tibble( 
     random_sample = rnorm(10),
     vec_char = c("Hi", "I", "am", "making", "a", "character", "vector", "of", "length", "ten"),
@@ -57,6 +57,7 @@ hw_df = #create example data frame
 ```
 
 This is a data frame comprised of:
+
 * a random sample of size 10 from a standard normal distribution
 * a logical vector indicating whether elements from the random sample are greater than 0
 * a character vector of length 10
