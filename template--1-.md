@@ -24,3 +24,11 @@ mean_temp <- mean(early_january_weather$temp)
 ```
 
 The mean temperature is `39.5821229`.
+
+``` r
+library(ggplot2)
+
+ggplot(data = early_january_weather, aes(x = hour, y = temp, color = humid)) + geom_point()
+```
+
+![](template--1-_files/figure-gfm/yx_scatter-1.png)<!-- -->

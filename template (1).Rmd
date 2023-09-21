@@ -22,3 +22,14 @@ mean_temp <- mean(early_january_weather$temp)
 
 The mean temperature is ``r mean_temp``.
 
+
+
+```{r yx_scatter}
+library(ggplot2)
+
+ggplot(data = early_january_weather, aes(x = hour, y = temp, color = humid)) + geom_point()
+```
+
+
+
+
