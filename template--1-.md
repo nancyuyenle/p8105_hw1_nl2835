@@ -32,3 +32,5 @@ ggplot(data = early_january_weather, aes(x = hour, y = temp, color = humid)) + g
 ```
 
 ![](template--1-_files/figure-gfm/yx_scatter-1.png)<!-- -->
+
+    ## Saving 7 x 5 in image

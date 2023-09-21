@@ -28,8 +28,12 @@ The mean temperature is ``r mean_temp``.
 library(ggplot2)
 
 ggplot(data = early_january_weather, aes(x = hour, y = temp, color = humid)) + geom_point()
+
 ```
 
+```{r, echo = FALSE}
+ggsave("temp_scatterplot.png")
+```
 
 
 
