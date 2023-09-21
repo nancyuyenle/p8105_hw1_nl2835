@@ -95,7 +95,18 @@ mean(pull, hw_df, vec_factor)
 The arguments to get the means of the logical, character, and factor
 vector are not numeric or logical, and returns NA.
 
+``` r
+# The code chunk will be displayed but the output will be hidden
+hw_df[["vec_char"]] <- as.numeric(hw_df[["vec_char"]])
+```
+
     ## Warning: NAs introduced by coercion
+
+``` r
+hw_df[["vec_logical"]] <- as.numeric(hw_df[["vec_logical"]])
+
+hw_df[["vec_factor"]] <- as.numeric(hw_df[["vec_factor"]])
+```
 
 When running a code chunk that applies the as.numeric function to the
 logical, character, and factor variables, the code attempts to convert

@@ -70,7 +70,7 @@ mean(pull, hw_df, vec_factor)
 
 The arguments to get the means of the logical, character, and factor vector are not numeric or logical, and returns NA. 
 
-```{r, echo = FALSE}
+```{r, echo = TRUE, results = 'hide'}
 # The code chunk will be displayed but the output will be hidden
 hw_df[["vec_char"]] <- as.numeric(hw_df[["vec_char"]])
 
