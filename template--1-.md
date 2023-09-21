@@ -8,4 +8,14 @@ I’m an R Markdown document!
 ``` r
 library(moderndive)
 data("early_january_weather")
+?early_january_weather
 ```
+
+The “early_january_weather dataset describes hourly meterological data
+for LGA, JFK, and EWR for the month of January 2013. This is a subset of
+the weather data frame from nycflights13.
+
+The format of this dataset is a dataframe of `358` rows and `15` columns
+representing hourly measurements and 15 variables. Some important
+variables are origin (meaning the weather station), year, month, day,
+hour, temp, and dewp.
