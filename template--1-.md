@@ -94,3 +94,11 @@ mean(pull, hw_df, vec_factor)
 
 The arguments to get the means of the logical, character, and factor
 vector are not numeric or logical, and returns NA.
+
+    ## Warning: NAs introduced by coercion
+
+When running a code chunk that applies the as.numeric function to the
+logical, character, and factor variables, the code attempts to convert
+non-numeric values to numeric values. However, since my vectors
+contained non-convertable non-numeric characters, NAs were introduced by
+coercion and the mean is still unable to be taken.
